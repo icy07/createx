@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>Welcome</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Createx</title>
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#1E212C">
 </head>
 
 <body>
 	<div class="rootpage">
-		<h1>Createx</h1>
+		<h1>Адаптивный многостраничный интернет-магазин Createx</h1>
 		<div data-spollers class="info-wrapper">
-			<div data-spoller class="lang _spoller-active">ENG</div>
+			<div data-spoller class="lang _spoller-active">RUS</div>
+			<div class="info-lang-wrapper">
+				<p class="welcome">Здравствуйте! Спасибо, что решили посмотреть моё портфолио. Это приветствующая
+					страница, сам сайт находится ниже по ссылкам.</p>
+				<p class="about">Весь сайт построен на rem и em. Он полностью адаптивен под все устройства. На сайте
+					присутствуют
+					попапы, слайдеры, спойлеры, табы, адаптивное меню-бургер, кастомные радио кнопки, чекбоксы, селекты и
+					многое
+					другое!</p>
+			</div>
+			<div data-spoller class="lang">ENG</div>
 			<div class="info-lang-wrapper">
 				<p class="welcome">Hello! Thank you for taking a look at my portfolio. It's just a welcome page. The real
 					website
@@ -20,25 +36,15 @@
 					spoilers,
 					tabs, adaptive menu burger, custom radio buttons, checkboxes, select and a lot more!</p>
 			</div>
-			<div data-spoller class="lang">RUS</div>
-			<div class="info-lang-wrapper">
-				<p class="welcome">Здравствуйте! Спасибо, что решили посмотреть моё портфолио. Это всего лишь приветствуюая
-					страница. Настоящий сайт находится ниже по ссылкам.</p>
-				<p class="about">Весь сайт построен на rem и em. Он полностью адаптивен под все устройства. На сайте
-					присутствуют
-					попапы, слайдеры, спойлеры, табы, адаптивное меню-бургер, кастомные радио кнопки, чекбоксы, селекты и
-					многое
-					другое!</p>
-			</div>
 		</div>
-		<h2>Pages:</h2>
+		<h2>Страницы / Pages:</h2>
 		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Main Page</a></li>
-			<li><a target="_blank" href="catalog.html">Catalog</a></li>
-			<li><a target="_blank" href="item.html">Product</a></li>
+			<li><a target="_blank" href="home.html">Главная / Main Page</a></li>
+			<li><a target="_blank" href="catalog.html">Каталог / Catalog</a></li>
+			<li><a target="_blank" href="item.html">Страница товара/ Product</a></li>
 		</ol>
 		<div class="rootpage__contacts">
-			<h2>My contacts:</h2>
+			<h2>Мои контакты / My contacts:</h2>
 			<p>Email: <a href="mailto:andrey.ilin823@gmail.com">andrey.ilin823@gmail.com</a></p>
 			<p>Vkontakte: <a href="https://vk.com/ja_ne_andrey" target="_blank">Андрей Ильин</a></p>
 		</div>
@@ -66,7 +72,7 @@
 		min-width: 320px;
 		width: 100%;
 		color: #fff;
-		background-color: #1E212C;
+		background: #1E212C;
 	}
 
 	body {
@@ -101,6 +107,7 @@
 	.info-wrapper {
 		display: flex;
 		flex-direction: column;
+		margin: 0px 0px 10px 0px;
 	}
 
 	.lang {
@@ -218,6 +225,10 @@
 
 	.rootpage__contacts a {
 		color: #ebe691;
+	}
+
+	.rootpage__contacts p {
+		line-height: 1.5em;
 	}
 </style>
 
